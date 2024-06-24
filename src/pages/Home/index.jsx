@@ -1,17 +1,17 @@
-import { useDispatch } from 'react-redux'
-import { TestAction } from '../../actions/user.actions'
+import { Header } from '../../components/Header'
+import { Filters } from '../../components/Filters'
+import { Tag } from '../../components/Tags'
+import { NoResults } from '../../components/NoResults'
+import { BlocRecettes } from '../../components/BlocRecettes'
 
 export function Home() {
-  const dispatch = useDispatch()
-
-  const testButton = () => {
-    console.log('test')
-    dispatch(TestAction('Bonjour Redux'))
-  }
   return (
     <>
-      <h1>Page HOME</h1>
-      <button onClick={testButton}>Test</button>
+      <Header />
+      <Filters />
+      <Tag />
+      <NoResults />
+      <BlocRecettes />
     </>
   )
 }

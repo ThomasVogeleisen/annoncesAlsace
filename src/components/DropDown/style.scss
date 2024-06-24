@@ -1,0 +1,153 @@
+.filtres {
+  position: relative;
+  height: 40px;
+  margin: 20px 24px 20px 24px;
+  display: flex;
+}
+
+.dropdown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  max-height: 50px;
+  max-width: 200px;
+  cursor: pointer;
+  border-radius: 11px;
+  background: #fff;
+  color: var(--Black);
+  font-family: Manrope;
+  z-index: 3;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  margin-right: 82px;
+}
+
+.dropdown-ingredients {
+  top: 0;
+  left: 0;
+}
+
+.dropdown-appareils {
+  top: 0;
+  left: 280px;
+}
+
+.dropdown-ustensils {
+  top: 0;
+  left: 560px;
+}
+
+/* Style pour le dropdown lorsqu'il est survolé ou a le focus */
+.dropdown:hover,
+.dropdown:focus-within {
+  max-height: 315px;
+}
+
+/* Style pour l'icône du dropdown lorsqu'il est survolé ou a le focus */
+.dropdown:hover .dropdown-icon,
+.dropdown:focus-within .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.dropdown-title {
+  padding: 17px 16px 0 16px;
+  font-family: Manrope;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dropdown-search-bar {
+  margin-left: 16px;
+  margin-right: 16px;
+  font-family: Manrope;
+  margin-top: 14px;
+  margin-bottom: 11px;
+  padding: 8px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--Grey);
+  border: #c6c6c6 1px solid;
+  border-radius: 3px;
+}
+
+.dropdown-search-icon {
+  height: 18px;
+  position: absolute;
+  top: 62px;
+  right: 25px;
+}
+
+.dropdown-close-icon {
+  height: 8px;
+  position: absolute;
+  top: 68px;
+  right: 55px;
+}
+
+.dropdown-element-tag-list {
+  margin-bottom: 8px;
+}
+
+.dropdown-element-tag {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--Yellow);
+  margin: 0;
+  padding: 9px 0 9px 16px;
+  border-bottom: 2px solid #fff;
+  transition: font-weight 0.3s ease-in-out;
+}
+
+.dropdown-element-tag-close-btn {
+  opacity: 0;
+  position: absolute;
+  width: 15px;
+  height: auto;
+  top: 11px;
+  right: 14px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Style pour le tag dans le dropdown lorsqu'il est survolé */
+.dropdown-element-tag:hover {
+  font-weight: 700;
+}
+
+/* Style pour le bouton de fermeture du tag lorsqu'il est survolé */
+.dropdown-element-tag:hover .dropdown-element-tag-close-btn {
+  opacity: 1;
+}
+
+.dropdown-element-list {
+  padding: 0 16px 16px 16px;
+}
+
+.dropdown-element {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 13px 0 0 0;
+}
+
+.dropdown-element-hidden {
+  display: none;
+}
+
+.dropdown-element:hover {
+  font-weight: 700;
+}
+
+.nb-recettes {
+  position: absolute;
+  top: -13px;
+  right: 0;
+  color: var(--Black);
+  font-family: Anton;
+  font-size: 21px;
+  font-weight: 400;
+}

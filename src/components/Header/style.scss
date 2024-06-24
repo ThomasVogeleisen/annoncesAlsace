@@ -1,0 +1,71 @@
+/* HEADER */
+header {
+  background-image: url('../../assets/header-image/header-image.jpg');
+  background-size: cover;
+  background-position-y: 70%;
+  height: 667px;
+}
+
+.bloc-logo {
+  padding: 51px 0 169px 69px;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  color: var(--Yellow);
+  text-align: center;
+  font-family: Anton;
+  font-size: 44px;
+  font-weight: 400;
+}
+
+/* SEARCH BAR */
+.bloc-search-bar {
+  position: relative;
+  text-align: center;
+  max-width: 65%;
+  margin: auto;
+}
+
+#search-bar {
+  border: none;
+  padding: 0;
+  width: 96%;
+  height: 72px;
+  margin-top: 30px;
+  padding-left: 35px;
+  border-radius: 11px;
+  color: var(--Grey);
+  font-family: Manrope;
+  font-size: 16px;
+}
+
+.btn-search {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  border: none;
+  width: 51px;
+  height: 52px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-image: url('../../assets/icons/search-logo-grey.svg');
+  transition: background-image 0.3s ease-in-out;
+}
+
+.search-close-btn {
+  position: absolute;
+  width: 13px;
+  top: 60px;
+  right: 85px;
+  cursor: pointer;
+}
+
+.search-close-btn-hidden {
+  display: none;
+}
+
+.btn-search:hover {
+  background-image: url('../../assets/icons/search-logo-yellow.svg');
+}
